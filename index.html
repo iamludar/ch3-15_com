@@ -1,0 +1,60 @@
+﻿<html>
+<head>
+<title>中国商品信息验证中心</title>
+<meta charset="utf-8">
+<meta name="Keywords" content="中国商品信息验证中心">
+<meta name="Description" content="中国商品信息验证中心 网上认证平台">
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.STYLE2 {
+	color: red;
+	font-size: 16px;
+	font-family:微软雅黑,宋体;
+}
+-->
+</style>
+<script src="files/fwcx_blank.js"></script>
+<script type="text/javascript" src="files/jquery-1.7.2.js"></script><script type="text/javascript" src="files/jquery.bankInput.js"></script><style type="text/css">
+body {text-align:center;} 
+div#main {
+text-align:center;
+border:0px solid #333;
+background:url(files/main.gif) no-repeat 0 0;
+width:968px;
+height:691px;
+margin:0 auto;
+position: relative;
+} 
+</style></head>
+
+<body bgcolor="#ecebeb" style="margin-top:0px; margin-bottom:0px;">
+<div id="main">
+	
+	<div style="position:absolute; bottom:1px; left:343px; right:1px; top:234px; height: 30px; width: 283px;">
+	  <div align="left">
+	    <input  id="FwCodec" type="text" style="border: 0px solid rgb(0, 0, 0); height: 27px; line-height: 15px; width: 286px; font-size: 20px; padding-left: 4px; padding-top: 4px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); background-color: transparent;" maxlength="19">
+      </div>
+	</div>
+<div style="position:absolute; bottom:1px; left:665px; right:1px; top:233px; height: 26px; width: 85px;cursor:hand;border:0px dashed #000;" onclick="fwchack('FwCodec','ReturnResult')" onmousedown="this.style.border=&#39;1px dashed #000&#39;;" onmouseup="this.style.border=&#39;0px dashed #000&#39;"></div>
+	</a>
+	
+
+  <div style="position:absolute; bottom:1px; left:154px; right:1px; top:353px; height: 152px; width: 672px;text-align:center;">
+	<span class="STYLE2" id="ReturnResult">
+  </span>  </div>
+<div style="position:absolute; bottom:1px; left:93px; right:1px; top:600px; height: 66px; width: 789px; text-align:center">
+    <p class="STYLE1">Copyright <span style="font-family:Arial;">&#169;</span> 2017 中国产品质量验证中心 版权所有</p>
+    <p class="STYLE1">注：申请验证商品，需提交企业营业执照、税务登记证、商标证等相关证件。</p>
+</div>
+</div>
+
+<script>
+$("#FwCodec").bankInput();
+document.all.FwCodec.focus();
+</script>
+
+</body></html>
